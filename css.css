@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(32, 32, 30);
+}
+
+/*** Modal-page ***/
+.modal-login{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(88, 88, 88, 0.4);
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.login-container{
+    background-color: rgb(24, 23, 23);
+    width: 400px;
+    height: 500px;
+    border-radius: 15px;
+    color: white;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 25px;
+    gap: 30px;
+}
+.login-font{
+    font-size: 2rem;
+}
+.login-container div{
+    width: 300px;
+}
+.login-container input{
+    width: 300px;
+    height: 50px;
+    margin-top: 10px;
+    outline: none;
+    font-size: 1.2rem;
+}
+.login-container a{
+    color: brown;
+    text-decoration: none;
+}
+.login-container a:hover{
+    color: rgb(216, 57, 57);
+}
+.login-container button{
+    width: 300px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: brown;
+    color: white;
+}
+.login-container button:hover{
+    background-color: rgb(216, 57, 57);
+}
+
+.signup-container{
+    background-color: rgb(24, 23, 23);
+    width: 400px;
+    height: 500px;
+    border-radius: 15px;
+    color: white;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 25px;
+    gap: 20px;
+}
+.signup-container div{
+    width: 300px;
+}
+.signup-container input{
+    width: 300px;
+    height: 50px;
+    margin-top: 10px;
+    outline: none;
+    font-size: 1.2rem;
+}
+.signup-container a{
+    color: brown;
+    text-decoration: none;
+}
+.signup-container a:hover{
+    color: rgb(216, 57, 57);
+}
+.signup-container button{
+    width: 300px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: brown;
+    color: white;
+}
+.signup-container button:hover{
+    background-color: rgb(216, 57, 57);
+}
+
+
+/*** Header ***/
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+header nav{
+    border-bottom: 1px solid white;
+    display: flex;
+    align-items: center;
+}
+header ul{
+    display: flex;
+    gap: 70px;
+    list-style: none;
+    align-items: center;
+}
+
+header a{
+    display: flex;
+    padding-top: 15px;
+    height: 60px;
+    color: white;
+    outline: none;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+#logo{
+    font-size: 1.4rem;
+    padding-top: 8px;
+    color: rgb(230, 16, 69);
+}
+#logo:hover{
+    border-bottom: 0;
+}
+header a:hover{
+    border-bottom: 4px solid white;
+}
+header a:focus{
+    border-bottom: 4px solid white;
+}
+header button{
+    height: 30px;
+    width: 70px;
+    border-radius: 15px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(112, 112, 112);
+    color: white;
+    cursor: pointer;
+}
+header button:hover{
+    background-color: brown;
+    color: white;
+}
+
+
+/*** Section ***/
+section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* background-color: rgb(104, 104, 104); */
+}
+
+/* Section - nav */
+.section-nav{
+    /* background-color: rgb(19, 18, 18); */
+    display: none;
+    align-items: center;
+    height: 40px;
+    padding-left: 280px;
+    
+}
+section ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    align-items: center;
+    
+}
+.section-nav a{
+    color: rgb(190, 190, 190);
+    outline: none;
+    text-decoration: none;   
+
+}
+.section-nav a:hover{
+    color: white;
+}
+.section-nav a:focus{
+    color: white;
+}
+.navname{
+    cursor: default;
+}
+/* Section - body */
+.section-body{
+    /* background-color: rgb(46, 46, 46); */
+    width: 100%;
+}
+
+/* Buildguide-page */
+.buildguide-page{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+.buildguidenub1{
+    width: 100%;
+    max-width: 380px;
+    cursor: pointer;
+    color: rgb(165, 165, 165);
+    background-color: rgb(24, 23, 23);
+    padding: 10px;
+    border-radius: 15px;
+}
+.buildguidenub1:hover .buildguide-name{
+    color: white;
+}
+.buildguide-page img{
+    width: 100%;
+    max-width: 380px;
+    border-radius: 10px;
+}
+.buildguide-name{
+    font-size: 1.1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.buildguidenub1 span{
+    font-size: 0.9rem;
+}
+.buidetypetag{
+    background-color: rgb(87, 87, 87);
+    margin-top: 5px;
+    width: fit-content;
+    padding: 2px 4px;
+    border-radius: 15px;
+}
+
+
+
+/*** Footer ***/
+footer{
+    background-color: rgb(112, 88, 56);
+}
+/** font style **/
+.flex{
+    display: flex;
+}
+.bigsize{
+    font-size: 1.2rem;
+}
+.smallsize{
+    font-size: 0.9rem;
+}
+
+.left5{
+    margin-left: 5px;
+}
+
+.crimsonColor{
+    color: crimson;
+}
+
+.huzesize{
+    font-size: 1.5rem;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+}
+
+
+/* .size2{
+    font-size: 2rem;
+} */
